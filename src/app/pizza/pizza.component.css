@@ -1,0 +1,11 @@
+.pizza-details-left {
+  transform-origin: center left;
+}
+
+.pizza-details-center {
+  transform-origin: center center;
+}
+
+.pizza-details-right {
+  transform-origin: center right;
+}

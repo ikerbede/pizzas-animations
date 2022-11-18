@@ -1,0 +1,16 @@
+<app-pizza-main
+  class="pizza-main"
+  [pizza]="pizza"
+  (mouseenter)="onMouseEnter($event)"
+  (mouseleave)="onMouseLeave('main')"
+></app-pizza-main>
+<app-pizza-details
+  @displayDetails
+  *ngIf="showDetails"
+  class="pizza-details"
+  [ngClass]="'pizza-details-' + position"
+  [style.top.px]="detailsTop"
+  [style.left.px]="detailsLeft"
+  [pizza]="pizza"
+  (mouseleave)="onMouseLeave('details')"
+></app-pizza-details>

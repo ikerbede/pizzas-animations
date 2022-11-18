@@ -1,0 +1,15 @@
+<h2>Pizzas</h2>
+<div class="pizzas-line">
+  <app-pizza
+    *ngFor="let pizza of pizzas.slice(0, 3); first as isFirst; last as isLast"
+    [position]="isFirst ? 'left' : isLast ? 'right' : 'center'"
+    [pizza]="pizza"
+  ></app-pizza>
+</div>
+<div class="pizzas-line">
+  <app-pizza
+    *ngFor="let pizza of pizzas.slice(3, 6); first as isFirst; last as isLast"
+    [position]="isFirst ? 'left' : isLast ? 'right' : 'center'"
+    [pizza]="pizza"
+  ></app-pizza>
+</div>

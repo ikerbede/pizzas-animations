@@ -1,0 +1,8 @@
+<h3>{{ pizza.name }}</h3>
+<p>{{ pizza.price }} €</p>
+<ul class="pizza-details-ingredients">
+  <li *ngFor="let item of pizza.ingredients; last as isLast">
+    <span>{{ item }}</span>
+    <span *ngIf="!isLast">,&nbsp;</span>
+  </li>
+</ul>
